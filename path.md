@@ -22,7 +22,5 @@
 |-----|-------|--------|
 | | sep | sep|
 | | delimiter | delimiter|
-| |  | |
 | |  | win32|
 | |  | posix|
-
