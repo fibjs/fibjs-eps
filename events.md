@@ -20,7 +20,7 @@ const myEmitter = new MyEmitter();
 |-----|-------|--------|
 |listenerCount||EventEmitter.listenerCount(emitter, eventName)|
 
-### method
+### member
 
 | method | fibjs | Node.js|
 |-----|-------|--------|
