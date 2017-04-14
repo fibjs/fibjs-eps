@@ -1,5 +1,7 @@
 # os
 
+module
+
 ## method
 
 | API | fibjs | Node.js|
