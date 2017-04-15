@@ -4,105 +4,101 @@ module
 
 ## method
 
-| API | fibjs | Node.js|
+| API | Node.js v7 |fibjs |
 |-----|-------|--------|
-|access |	|fs.access(path[, mode], callback) |
-|accessSync |	| fs.accessSync(path[, mode])|
-|appendFile |	| fs.appendFile(file, data[, options], callback)|
-|appendFileSync |	| fs.appendFileSync(file, data[, options])|
-|chmod|	chmod (String path, Integer mode) async| fs.chmod(path, mode, callback)|
-|chmodSync|	chmodSync (String path, Integer mode)| fs.chmodSync(path, mode)|
-|chown |	| fs.chown(path, uid, gid, callback)|
-|chownSync |	| fs.chownSync(path, uid, gid)|
-|close |	| fs.close(fd, callback)|
-|closeSync |	| fs.closeSync(fd)|
-|createReadStream |	| fs.createReadStream(path[, options])|
-|createWriteStream |	| fs.createWriteStream(path[, options])|
-|copy|	copy (String from, String to) async| |
-|exists | Boolean 	exists (String path) async | fs.exists(path, callback)|
-|existsSync | Boolean 	existsSync (String path) | fs.existsSync(path)|
-|fchmod |	| fs.fchmod(fd, mode, callback)|
-|fchmodSync |	| fs.fchmodSync(fd, mode)|
-|fchown |	| fs.fchown(fd, uid, gid, callback)|
-|fchownSync |	| fs.fchownSync(fd, uid, gid)|
-|fdatasync |	| fs.fdatasync(fd, callback)|
-|fdatasyncSync |	| fs.fdatasyncSync(fd)|
-|fstat |	| fs.fstat(fd, callback)|
-|fstatSync |	| fs.fstatSync(fd)|
-|fsync |	| fs.fsync(fd, callback)|
-|fsyncSync |	| fs.fsyncSync(fd)|
-|ftruncate |	| fs.ftruncate(fd, len, callback)|
-|ftruncateSync |	| fs.ftruncateSync(fd, len)|
-|futimes |	| fs.futimes(fd, atime, mtime, callback)|
-|futimesSync |	| fs.futimesSync(fd, atime, mtime)|
-|lchmod |	| fs.lchmod(path, mode, callback)|
-|lchmodSync |	| fs.lchmodSync(path, mode)|
-|lchown |	| fs.lchown(path, uid, gid, callback)|
-|lchownSync |	| fs.lchownSync(path, uid, gid)|
-|link |	| fs.link(existingPath, newPath, callback)|
-|linkSync |	| fs.linkSync(existingPath, newPath)|
-|lstat |	| fs.lstat(path, callback)|
-|lstatSync |	| fs.lstatSync(path)|
-|mkdir |mkdir (String path, Integer mode=0777) async  | fs.mkdir(path[, mode], callback)|
-|mkdirSync |mkdirSync (String path, Integer mode=0777)  | fs.mkdirSync(path[, mode])|
-|mkdtemp |	| fs.mkdtemp(prefix[, options], callback)|
-|mkdtempSync |	| fs.mkdtempSync(prefix[, options])|
-|open| SeekableStream 	open (String fname, String flags="r") async| fs.open(path, flags[, mode], callback)|
-|openSync| SeekableStream 	openSync (String fname, String flags="r")| fs.openSync(path, flags[, mode])|
-|openTextStream| BufferedStream 	openTextStream (String fname, String flags="r") async| |
-|read |	| fs.read(fd, buffer, offset, length, position, callback)|
-|readSync |	| fs.readSync(fd, buffer, offset, length, position)|
-| |	| |
-| |	| |
-|readdir| List 	readdir (String path) async| fs.readdir(path[, options], callback)|
-|readdirSync| List 	readdirSync (String path)| fs.readdirSync(path[, options])|
-|readFile| Buffer 	readFile (String fname) async| fs.readFile(file[, options], callback)|
-|readFileSync| Buffer 	readFileSync (String fname)| fs.readFileSync(file[, options])|
-|readLines| Array 	readLines (String fname, Integer maxlines=-1)| |
-|readlink |	| fs.readlink(path[, options], callback)|
-|readlinkSync |	| fs.readlinkSync(path[, options])|
-|realpath |	| fs.realpath(path[, options], callback)|
-|realpathSync |	| fs.realpathSync(path[, options])|
-|readTextFile| String 	readTextFile (String fname) async| |
-|rename|	rename (String from, String to) async| fs.rename(oldPath, newPath, callback)|
-|renameSync|	renameSync (String from, String to)| fs.renameSync(oldPath, newPath)|
-|rmdir|	rmdir (String path) async| fs.rmdir(path, callback)|
-|rmdirSync|	rmdirSync (String path)| fs.rmdirSync(path)|
-|stat| Stat 	stat (String path) async| fs.stat(path, callback)|
-|statSync| Stat 	statSync (String path)| fs.statSync(path)|
-|symlink |	| fs.symlink(target, path[, type], callback)|
-|symlinkSync |	| fs.symlinkSync(target, path[, type])|
-|truncate |	| fs.truncate(path, len, callback)|
-|truncateSync |	| fs.truncateSync(path, len)|
-|unlink |unlink (String path) async  | fs.unlink(path, callback)|
-|unlinkSync |unlinkSync (String path) | fs.unlinkSync(path)|
-|unwatchFile |	| fs.unwatchFile(filename[, listener])|
-|utimes |	| fs.utimes(path, atime, mtime, callback)|
-|utimesSync |	| fs.utimesSync(path, atime, mtime)|
-|watch |	| fs.watch(filename[, options][, listener])|
-|watchFile |	| fs.watchFile(filename[, options], listener)|
-|write |	| fs.write(fd, buffer[, offset[, length[, position]]], callback)|
-|write |	| fs.write(fd, string[, position[, encoding]], callback)|
-|writeFile|	writeFile (String fname, Buffer data) async| fs.writeFile(file, data[, options], callback)|
-|writeFileSync|	writeFileSync (String fname, Buffer data)| fs.writeFileSync(file, data[, options])|
-|writeSync |	| fs.writeSync(fd, buffer[, offset[, length[, position]]])|
-|writeSync |	| fs.writeSync(fd, string[, position[, encoding]])|
-|writeTextFile|	writeTextFile (String fname, String txt) asy| |
-
-
+| access            |	access(path[, mode], callback)              |                                        |
+| accessSync        |	accessSync(path[, mode])                    |                                        | 
+| appendFile        |	appendFile(file, data[, options], callback) |                                        | 
+| appendFileSync    |	appendFileSync(file, data[, options])       |                                        | 
+| chmod             | chmod(path, mode, callback)                 | chmod (path, mode) async               |
+| chmodSync         | chmodSync(path, mode)|chmodSync (path, mode)|                                        |
+| chown             |	chown(path, uid, gid, callback)             |                                        |
+| chownSync         |	chownSync(path, uid, gid)                   |                                        |
+| close             |	close(fd, callback)                         |                                        |
+| closeSync         |	closeSync(fd)                               |                                        |
+| createReadStream  |	createReadStream(path[, options])           |                                        |
+| createWriteStream |	createWriteStream(path[, options])          |                                        |
+| copy              |	                                            | copy (from, to) async                  |
+| exists            |                                             | Boolean exists (path) async            |
+| existsSync        | existsSync(path)                            | Boolean existsSync (path)              |
+| fchmod            |	fchmod(fd, mode, callback)                  |                                        |
+| fchmodSync        |	fchmodSync(fd, mode)                        |                                        |
+| fchown            |	fchown(fd, uid, gid, callback)              |                                        |
+| fchownSync        |	fchownSync(fd, uid, gid)                    |                                        |
+| fdatasync         |	fdatasync(fd, callback)                     |                                        |
+| fdatasyncSync     |	fdatasyncSync(fd)                           |                                        |
+| fstat             |	fstat(fd, callback)                         |                                        |
+| fstatSync         |	fstatSync(fd)                               |                                        |
+| fsync             |	fsync(fd, callback)                         |                                        |
+| fsyncSync         |	fsyncSync(fd)                               |                                        |
+| ftruncate         |	ftruncate(fd, len, callback)                |                                        |
+| ftruncateSync     |	ftruncateSync(fd, len)                      |                                        |
+| futimes           |	futimes(fd, atime, mtime, callback)         |                                        |
+| futimesSync       |	futimesSync(fd, atime, mtime)               |                                        |
+| lchmod            |	lchmod(path, mode, callback)                |                                        |
+| lchmodSync        |	lchmodSync(path, mode)                      |                                        |
+| lchown            |	lchown(path, uid, gid, callback)            |                                        |
+| lchownSync        |	lchownSync(path, uid, gid)                  |                                        |
+| link              |	link(existingPath, newPath, callback)       |                                        |
+| linkSync          |	linkSync(existingPath, newPath)             |                                        |
+| lstat             |	lstat(path, callback)                       |                                        |
+| lstatSync         |	lstatSync(path)                             |                                        |
+| mkdir             | mkdir(path[, mode], callback)               |mkdir (path, mode=0777) async           |
+| mkdirSync         | mkdirSync(path[, mode])                     |mkdirSync (path, mode=0777)             |
+| mkdtemp           |	mkdtemp(prefix[, options], callback)        |                                        |
+| mkdtempSync       |	mkdtempSync(prefix[, options])              |                                        |
+| open              | open(path, flags[, mode], callback)         |open (fname, flags="r") async           |
+| openSync          | openSync(path, flags[, mode])               |openSync (fname, flags="r")             |
+| openTextStream    |                                             | openTextStream (fname, flags="r") async|
+| read              |	read(fd, buffer, offset, length, position, callback)  |                              | 
+| readSync          |	readSync(fd, buffer, offset, length, position) |                                     | 
+| readdir           | readdir(path[, options], callback)          | List readdir (path) async              | 
+| readdirSync       | readdirSync(path[, options])                | List readdirSync (path)                |
+| readFile          | readFile(file[, options], callback)         | Buffer readFile (fname) async          |
+| readFileSync      | readFileSync(file[, options])               | Buffer readFileSync (fname)            |
+| readLines         |                                             | Array readLines (fname, maxlines=-1)   |
+| readlink          |	readlink(path[, options], callback)         |                                        |
+| readlinkSync      |	readlinkSync(path[, options])               |                                        |
+| realpath          |	realpath(path[, options], callback)         |                                        |
+| realpathSync      |	realpathSync(path[, options])               |                                        |
+| readTextFile      |                                             | String readTextFile (fname) async      |
+| rename            |	rename(oldPath, newPath, callback)          | rename (from, to) async                |
+| renameSync        |	renameSync(oldPath, newPath)                | renameSync (from, to)                  |
+| rmdir             |	rmdir(path, callback)                       | rmdir (path) async                     |
+| rmdirSync         |	rmdirSync(path)                             | rmdirSync (path)                       |
+| stat              | stat(path, callback)                        | Stat 	stat (path) async                |
+| statSync          | statSync(path)                              | Stat 	statSync (path)                  |
+| symlink           |	symlink(target, path[, type], callback)     |                                        |
+| symlinkSync       |	symlinkSync(target, path[, type])           |                                        |
+| truncate          |	truncate(path, len, callback)               |                                        |
+| truncateSync      |	truncateSync(path, len)                     |                                        |
+| unlink            | unlink(path, callback)                      | unlink (path) async                    |
+| unlinkSync        | unlinkSync(path)                            | unlinkSync (path)                      |
+| unwatchFile       |	unwatchFile(filename[, listener])           |                                        |
+| utimes            |	utimes(path, atime, mtime, callback)        |                                        |
+| utimesSync        |	utimesSync(path, atime, mtime)              |                                        |
+| watch             |	watch(filename[, options][, listener])      |                                        |
+| watchFile         |	watchFile(filename[, options], listener)    |                                        |
+| write             |	write(fd, buffer[, offset[, length[, position]]], callback) |                        |
+| write             |	write(fd, string[, position[, encoding]], callback)|                                 |
+| writeFile         |	writeFile(file, data[, options], callback)  |  writeFile (fname, data) async         |
+| writeFileSync     |	writeFileSync(file, data[, options])        |  writeFileSync (fname, data)           |
+| writeSync         |	writeSync(fd, buffer[, offset[, length[, position]]])   |                            |
+| writeSync         |	writeSync(fd, string[, position[, encoding]])  |                                     |
+| writeTextFile     |	                                            | writeTextFile (fname, txt) asyc        |
 
 ## property
 
-| property | fibjs | Node.js|
-|-----|-------|--------|
-| | const 	SEEK_SET = 0 | |
-| | const 	SEEK_CUR = 1 | |
-| | const 	SEEK_END = 2 | |
-| |                      | constants|
-| |                      | F_OK: 0|
-| |                      | R_OK: 4|
-| |                      | W_OK: 2|
-| |                      | X_OK: 1|
+| property | Node.js v7 |      fibjs         |
+|----------|------------|--------------------|
+|          |            | const SEEK_SET = 0 |
+|          |            | const SEEK_CUR = 1 |
+|          |            | const SEEK_END = 2 |
+|          | constants  |                    |
+|          | F_OK: 0    |                    |
+|          | R_OK: 4    |                    |
+|          | W_OK: 2    |                    |
+|          | X_OK: 1    |                    |
 
 `Node.js fs.constants:`
  

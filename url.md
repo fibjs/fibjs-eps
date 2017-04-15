@@ -7,17 +7,21 @@ module
 ```js
 const url = require('url');
 ```
-
 ### method
 
-| method | fibjs | Node.js|
-|-----|-------|--------|
-|format| static String 	format (Object args) |url.format(urlObject), url.format(URL[, options])|
-|parse|static UrlObject 	parse (String url, Boolean parseQueryString=false)|url.parse(urlString[, parseQueryString[, slashesDenoteHost]])|
-|resolve||url.resolve(from, to)|
+|  method |                Node.js 7                       |           fibjs           |
+|---------|------------------------------------------------|---------------------------|
+| format  | format(urlObject), format(URL[, options])      | String format (urlObject) |
+| format  | format(URL[, options])                         |                           |
+| parse   | parse(urlString[, parse[, slashesDenoteHost]]) | parse (url, parse=false)  |
+| resolve | resolve(from, to)                              |                           |
 
 ## property
 
-| property | fibjs | Node.js|
-|-----|-------|--------|
-|||Url|
+| property | Node.js v7      | fibjs |
+|----------|-----------------|-------|
+|          | Url             |       |
+|          | URL             |       |
+|          | URLSearchParams |       |
+|          | domainToASCII   |       |
+|          | domainToUnicode |       |

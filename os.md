@@ -4,47 +4,47 @@ module
 
 ## method
 
-| API | fibjs | Node.js|
-|-----|-------|--------|
-|arch||os.arch()|
-|cpus||os.cpus()|
-|CPUInfo|Array 	CPUInfo () ||
-|CPUs|Integer 	CPUs () ||
-|endianness||os.endianness()|
-|dateAdd|Date 	dateAdd (Date d, Integer num, String part) ||
-|freemem|Long 	freemem () |os.freemem()|
-|homedir||os.homedir()|
-|hostname||os.hostname()|
-|loadavg|Array 	loadavg () |os.loadavg()|
-|networkInterfaces||os.networkInterfaces()|
-|memoryUsage|Object 	memoryUsage () ||
-|networkInfo|Object 	networkInfo () ||
-|openPrinter|BufferedStream 	openPrinter (String name) async ||
-|platform|String 	platform () |os.platform()|
-|release||os.release()|
-|printerInfo|Array 	printerInfo () ||
-|totalmem|Long 	totalmem () ||
-|tmpdir|String 	tmpdir () |os.tmpdir()|
-|totalmem||os.totalmem()|
-|type||os.type()|
-|userInfo||os.userInfo([options])|
-|time|Date 	time (String tmString="") ||
-|uptime|Number 	uptime () |os.uptime()|
+|       API         |       Node.js v7       |                   fibjs                       |
+|-------------------|------------------------|-----------------------------------------------|
+| arch              | os.arch()              |                                               |
+| cpus              | os.cpus()              |                                               |
+| CPUInfo           |                        | Array CPUInfo()                               |
+| CPUs              |                        | Integer CPUs()                                |
+| endianness        | os.endianness()        |                                               |
+| dateAdd           |                        | Date dateAdd(Date d,Integer num,String part)  |
+| freemem           | os.freemem()           | Long freemem()                                |
+| homedir           | os.homedir()           |                                               |
+| hostname          | os.hostname()          |                                               |
+| loadavg           | os.loadavg()           | Array loadavg()                               |
+| networkInterfaces | os.networkInterfaces() |                                               |
+| memoryUsage       |                        | Object memoryUsage()                          |
+| networkInfo       |                        | Object networkInfo()                          |
+| openPrinter       |                        | BufferedStream openPrinter(String name) async |
+| platform          | os.platform()          | String platform()                             |
+| release           | os.release()           |                                               |
+| printerInfo       |                        | Array printerInfo()                           |
+| totalmem          |                        | Long totalmem()                               |
+| tmpdir            | os.tmpdir()            | String tmpdir()                               |
+| totalmem          | os.totalmem()          |                                               |
+| type              | os.type()              |                                               |
+| userInfo          | os.userInfo([options]) |                                               |
+| time              |                        | Date time(String tmString="")                 |
+| uptime            | os.uptime()            | Number uptime()                               |
 
 ## property
 
-| property | fibjs | Node.js|
-|-----|-------|--------|
-||	Service||
-||readonly String 	hostname||
-||readonly String 	type||
-||readonly String 	version||
-||readonly String 	arch||
-||readonly Integer 	timezone||
-||readonly String 	EOL||
-||readonly String 	execPath||
-|||EOL|
-|||constants|
+| property |            fibjs            | Node.js v7 |
+|----------|-----------------------------|------------|
+|          | Service                     |            |
+|          | readonly String hostname    |            |
+|          | readonly String type        |            |
+|          | readonly String version     |            |
+|          | readonly String arch        |            |
+|          | readonly Integer timezone   |            |
+|          | readonly String EOL         |            |
+|          | readonly String execPath    |            |
+|          |                             | EOL        |
+|          |                             | constants  |
 
 `Node.js os.constants`
 
