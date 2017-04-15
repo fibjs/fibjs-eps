@@ -2,8 +2,8 @@
 
 Object
 
-Node.js: ChildProcess
-fibjs: SubProcess
+- Node.js: ChildProcess
+- fibjs: SubProcess
 
 ## Class: EventEmitter
 
