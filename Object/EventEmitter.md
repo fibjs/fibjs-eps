@@ -1,4 +1,5 @@
-# Event
+
+# EventEmitter
 
 Object
 
