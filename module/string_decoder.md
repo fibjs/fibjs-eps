@@ -17,6 +17,6 @@ console.log(decoder.write(euro));
 
 ## property
 
-| property | Node.js v7      | fibjs |
-|----------|-----------------|-------|
-|          | StringDecoder   |       |
+|   property    | Node.js v7      | fibjs |
+|---------------|-----------------|-------|
+| StringDecoder | StringDecoder   |       |

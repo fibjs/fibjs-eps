@@ -18,10 +18,10 @@ const url = require('url');
 
 ## property
 
-| property | Node.js v7      | fibjs |
-|----------|-----------------|-------|
-|          | Url             |       |
-|          | URL             |       |
-|          | URLSearchParams |       |
-|          | domainToASCII   |       |
-|          | domainToUnicode |       |
+|    property    | Node.js v7      | fibjs |
+|----------------|-----------------|-------|
+|Url             | Url             |       |
+|URL             | URL             |       |
+|URLSearchParams | URLSearchParams |       |
+|domainToASCII   | domainToASCII   |       |
+|domainToUnicode | domainToUnicode |       |

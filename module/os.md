@@ -33,18 +33,17 @@ module
 
 ## property
 
-| property |            fibjs            | Node.js v7 |
-|----------|-----------------------------|------------|
-|          | Service                     |            |
-|          | readonly String hostname    |            |
-|          | readonly String type        |            |
-|          | readonly String version     |            |
-|          | readonly String arch        |            |
-|          | readonly Integer timezone   |            |
-|          | readonly String EOL         |            |
-|          | readonly String execPath    |            |
-|          |                             | EOL        |
-|          |                             | constants  |
+| property | Node.js v7 |            fibjs            |
+|----------|------------|-----------------------------|
+|Service   |            | Service                     |
+|hostname  |            | readonly String hostname    |
+|type      |            | readonly String type        |
+|version   |            | readonly String version     |
+|arch      |            | readonly String arch        |
+|timezone  |            | readonly Integer timezone   |
+|execPath  |            | readonly String execPath    |
+|EOL       | EOL        | readonly String EOL         |
+|constants | constants  |                             |
 
 `Node.js os.constants`
 

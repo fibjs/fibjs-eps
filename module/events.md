@@ -13,6 +13,6 @@ const myEmitter = new MyEmitter();
 
 ## property
 
-| property | Node.js v7   |     fibjs    |
-|----------|--------------|--------------|
-|          | EventEmitter | EventEmitter |
+|   property  | Node.js v7   |     fibjs    |
+|-------------|--------------|--------------|
+|EventEmitter | EventEmitter | EventEmitter |

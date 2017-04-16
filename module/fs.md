@@ -91,14 +91,14 @@ module
 
 | property | Node.js v7 |      fibjs         |
 |----------|------------|--------------------|
-|          |            | const SEEK_SET = 0 |
-|          |            | const SEEK_CUR = 1 |
-|          |            | const SEEK_END = 2 |
-|          | constants  |                    |
-|          | F_OK: 0    |                    |
-|          | R_OK: 4    |                    |
-|          | W_OK: 2    |                    |
-|          | X_OK: 1    |                    |
+|SEEK_SET  |            | const SEEK_SET = 0 |
+|SEEK_CUR  |            | const SEEK_CUR = 1 |
+|SEEK_END  |            | const SEEK_END = 2 |
+|constants | constants  |                    |
+|F_OK      | F_OK: 0    |                    |
+|R_OK      | R_OK: 4    |                    |
+|W_OK      | W_OK: 2    |                    |
+|X_OK      | X_OK: 1    |                    |
 
 `Node.js fs.constants:`
  

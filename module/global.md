@@ -22,15 +22,15 @@ module
 
 ## property
 
-| property | Node.js v7 |           fibjs            |
-|----------|----------- |----------------------------|
-|          | Buffer     | Buffer                     |
-|          | __dirname  | readonly String __dirname  |
-|          | __filename | readonly String __filename |
-|          | exports    |                            |
-|          | global     | readonly Object global     |
-|          | module     |                            |
-|          | process    | process                    |
-|          | console    | console                    |
-|          |            | Int64                      |
-|          |            | readonly Array 	argv       |
+| property  | Node.js v7 |           fibjs            |
+|-----------|----------- |----------------------------|
+|Buffer     | Buffer     | Buffer                     |
+|__dirname  | __dirname  | readonly String __dirname  |
+|__filename | __filename | readonly String __filename |
+|exports    | exports    |                            |
+|global     | global     | readonly Object global     |
+|module     | module     |                            |
+|process    | process    | process                    |
+|console    | console    | console                    |
+|Int64      |            | Int64                      |
+|argv       |            | readonly Array 	argv      |

@@ -49,13 +49,13 @@ const myEmitter = new MyEmitter();
 | off                 |                                          | Object off(map={})                |
 | listeners           |                                          | Array listeners(ev)               |
 
-| property |      Node.js v7     | fibjs |
-|----------|---------------------|-------|
-|          | defaultMaxListeners |       |
+|     property       |      Node.js v7     | fibjs |
+|--------------------|---------------------|-------|
+|defaultMaxListeners | defaultMaxListeners |       |
 
 ### Event
 
-| Event |   Node.js v7   | fibjs |
-|-------|----------------|-------|
-|       | newListener    |       |
-|       | removeListener |       |
+|       Event   |   Node.js v7   | fibjs |
+|---------------|----------------|-------|
+|newListener    | newListener    |       |
+|removeListener | removeListener |       |

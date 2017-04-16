@@ -42,40 +42,40 @@ module
 
 ## property
 
-| property | Node.js v7 |           fibjs          |
-|----------|------------|--------------------------|
-|          | arch       | readonly String arch     |
-|          | argv       | readonly Array argv      |
-|          | argv0      |                          |
-|          | channel    |                          |
-|          | config     |                          |
-|          | connected  |                          |
-|          | env        | readonly Object env      |
-|          | execArgv   | readonly Array execArgv  |
-|          | execPath   | readonly String execPath |
-|          | exitCode   |                          |
-|          | mainModule |                          |
-|          | pid        |                          |
-|          | platform   | readonly String platform |
-|          | release    |                          |
-|          | stderr     |                          |
-|          | stdin      |                          |
-|          | stdout     |                          |
-|          | title      |                          |
-|          | version    | readonly String version  |
-|          | versions   |                          |
-|          | connected  |                          |
+| property  | Node.js v7 |           fibjs          |
+|-----------|------------|--------------------------|
+|arch       | arch       | readonly String arch     |
+|argv       | argv       | readonly Array argv      |
+|argv0      | argv0      |                          |
+|channel    | channel    |                          |
+|config     | config     |                          |
+|connected  | connected  |                          |
+|env        | env        | readonly Object env      |
+|execArgv   | execArgv   | readonly Array execArgv  |
+|execPath   | execPath   | readonly String execPath |
+|exitCode   | exitCode   |                          |
+|mainModule | mainModule |                          |
+|pid        | pid        |                          |
+|platform   | platform   | readonly String platform |
+|release    | release    |                          |
+|stderr     | stderr     |                          |
+|stdin      | stdin      |                          |
+|stdout     | stdout     |                          |
+|title      | title      |                          |
+|version    | version    | readonly String version  |
+|versions   | versions   |                          |
+|connected  | connected  |                          |
 
 ### Event
 
-| Event |      Node.js v7    |  fibjs |
-|-------|--------------------|--------|
-|       | beforeExit         |        |
-|       | disconnect         |        |
-|       | exit               |        |
-|       | message            |        |
-|       | rejectionHandled   |        |
-|       | uncaughtException  |        |
-|       | unhandledRejection |        |
-|       | warning            |        |
-|       | Signal             |        |
+|         Event     |      Node.js v7    |  fibjs |
+|-------------------|--------------------|--------|
+|beforeExit         | beforeExit         |        |
+|disconnect         | disconnect         |        |
+|exit               | exit               |        |
+|message            | message            |        |
+|rejectionHandled   | rejectionHandled   |        |
+|uncaughtException  | uncaughtException  |        |
+|unhandledRejection | unhandledRejection |        |
+|warning            | warning            |        |
+|Signal             | Signal             |        |

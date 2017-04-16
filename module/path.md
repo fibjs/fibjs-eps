@@ -22,7 +22,7 @@ module
 
 | property | Node.js v7| fibjs     |
 |----------|-----------|-----------|
-|          | sep       | sep       |
-|          | delimiter | delimiter |
-|          | win32     |           |
-|          | posix     |           |
+|sep       | sep       | sep       |
+|delimiter | delimiter | delimiter |
+|win32     | win32     |           |
+|posix     | posix     |           |

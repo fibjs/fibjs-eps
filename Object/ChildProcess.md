@@ -35,23 +35,23 @@ Object
 
 | property |  Node.js v7 |              fibjs              |
 |----------|-------------|---------------------------------|
-|          | channel     |                                 |
-|          | connected   |                                 |
-|          | pid         | readonly Integer pid            |
-|          | stderr      |                                 |
-|          | stdin       | readonly BufferedStream stdin   |
-|          | stdio       |                                 |
-|          | stdout      | readonly BufferedStream 	stdout |
-|          |             | readonly Stream 	stream         |
-|          |             | String 	charset                |
-|          |             | String 	EOL                    |
+|channel   | channel     |                                 |
+|connected | connected   |                                 |
+|pid       | pid         | readonly Integer pid            |
+|stderr    | stderr      |                                 |
+|stdin     | stdin       | readonly BufferedStream stdin   |
+|stdio     | stdio       |                                 |
+|stdout    | stdout      | readonly BufferedStream 	stdout |
+|stream    |             | readonly Stream 	stream         |
+|charset   |             | String 	charset                |
+|EOL       |             | String 	EOL                    |
 
 ### Event
 
-| Event | Node.js v7 |  fibjs |
-|-------|------------|--------|
-|       | close      |        |
-|       | disconnect |        |
-|       | error      |        |
-|       | exit       |        |
-|       | message    |        |
+|   Event   | Node.js v7 |  fibjs |
+|-----------|------------|--------|
+|close      | close      |        |
+|disconnect | disconnect |        |
+|error      | error      |        |
+|exit       | exit       |        |
+|message    | message    |        |

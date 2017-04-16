@@ -61,5 +61,5 @@ module
 
 | property | Node.js v7| fibjs     |
 |----------|-----------|-----------|
-|          |           | Stats     |
-|          |           | LruCache  |
+|Stats     |           | Stats     |
+|LruCache  |           | LruCache  |
