@@ -1,8 +1,8 @@
-# ReadStream
+# tty.ReadStream
 
 Object
 
-## Class: ReadStream
+## Class: tty.ReadStream
 
 ```js
 ```
