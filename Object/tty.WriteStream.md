@@ -1,9 +1,9 @@
 
-# WriteStream
+# tty.WriteStream
 
 Object
 
-## Class: WriteStream
+## Class: tty.WriteStream
 
 ```js
 ```
