@@ -30,7 +30,6 @@ const myEmitter = new MyEmitter();
 | emit                | emit(eventName[, ...args])               | Boolean emit(ev,...)              |
 | eventNames          | eventNames()                             |                                   |
 | getMaxListeners     | getMaxListeners()                        |                                   |
-| listenerCount       | listenerCount(eventName)                 |                                   |
 | listeners           | listeners(eventName)                     | Array listeners(ev)               |
 | on                  | on(eventName, listener)                  | Object on( ev, func)              |
 | on                  |                                          | Object on(map={})                 |
