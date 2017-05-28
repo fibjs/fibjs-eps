@@ -31,23 +31,21 @@ const myEmitter = new MyEmitter();
 | eventNames          | eventNames()                             |                                   |
 | getMaxListeners     | getMaxListeners()                        |                                   |
 | listenerCount       | listenerCount(eventName)                 |                                   |
-| listeners           | listeners(eventName)                     |                                   |
+| listeners           | listeners(eventName)                     | Array listeners(ev)               |
 | on                  | on(eventName, listener)                  | Object on( ev, func)              |
 | on                  |                                          | Object on(map={})                 |
 | once                | once(eventName, listener)                | Object once(ev, func)             |
 | once                |                                          | Object once(Object map)           |
 | prependListener     | prependListener(eventName, listener)     |                                   |
 | prependOnceListener | prependOnceListener(eventName, listener) |                                   |
-| removeAllListeners  | removeAllListeners([eventName])          | Object removeListener(ev, func)   |
-| removeAllListeners  |                                          | Object removeListener(ev)         |
-| removeAllListeners  |                                          | Object removeListener(map={})     |
-| removeAllListeners  |                                          | Object removeAllListeners(evs=[]) |
-| removeListener      | removeListener(eventName, listener)      |                                   |
+| removeAllListeners  | removeAllListeners([eventName])          | Object removeAllListeners(evs=[]) |
+| removeListener      | removeListener(eventName, listener)      | Object removeListener(ev, func)   |
+| removeListener      |                                          | Object removeListener(ev)         |
+| removeListener      |                                          | Object removeListener(map={})     |
 | setMaxListeners     | setMaxListeners(n)                       | setMaxListeners(Integer n)        |
 | off                 |                                          | Object off(ev, func)              |
 | off                 |                                          | Object off(ev)                    |
 | off                 |                                          | Object off(map={})                |
-| listeners           |                                          | Array listeners(ev)               |
 
 |     property       |      Node.js v7     | fibjs |
 |--------------------|---------------------|-------|
