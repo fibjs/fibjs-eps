@@ -23,9 +23,8 @@ module
 | platform          | os.platform()          | String platform()                             |
 | release           | os.release()           |                                               |
 | printerInfo       |                        | Array printerInfo()                           |
-| totalmem          |                        | Long totalmem()                               |
 | tmpdir            | os.tmpdir()            | String tmpdir()                               |
-| totalmem          | os.totalmem()          |                                               |
+| totalmem          | os.totalmem()          | Long totalmem()                               |
 | type              | os.type()              |                                               |
 | userInfo          | os.userInfo([options]) |                                               |
 | time              |                        | Date time(String tmString="")                 |
