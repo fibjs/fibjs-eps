@@ -15,12 +15,6 @@ class MyEmitter extends EventEmitter {}
 const myEmitter = new MyEmitter();
 ```
 
-### static
-
-|     method    |            Node.js v7             | fibjs |
-|---------------|-----------------------------------|-------|
-| listenerCount | listenerCount(emitter, eventName) |       |
-
 ### member
 
 |       method        |                   Node.js v7             |               fibjs               |
@@ -45,6 +39,7 @@ const myEmitter = new MyEmitter();
 | off                 |                                          | Object off(ev, func)              |
 | off                 |                                          | Object off(ev)                    |
 | off                 |                                          | Object off(map={})                |
+| listenerCount       | listenerCount(emitter, eventName)        |                                   |
 
 |     property       |      Node.js v7     | fibjs |
 |--------------------|---------------------|-------|
