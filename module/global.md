@@ -18,7 +18,6 @@ module
 | setImmediate    | setImmediate(callback[, ...args])       | setImmediate(callback)         |
 | setInterval     | setInterval(callback, delay[, ...args]) | setInterval(callback, timeout) |
 | setTimeout      | setTimeout(callback, delay[, ...args])  | setTimeout(callback, timeout)  |
-| sync            |                                         | sync(func)                     |
 
 ## property
 
