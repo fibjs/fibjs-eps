@@ -23,7 +23,7 @@ module
 | tmpdir            | os.tmpdir()            | String tmpdir()                               |
 | totalmem          | os.totalmem()          | Long totalmem()                               |
 | type              | os.type()              | String type()                                 |
-| userInfo          | os.userInfo([options]) |                                               |
+| userInfo          | os.userInfo([options]) | Object userInfo(Object options = {})          |
 | time              |                        | Date time(String tmString="")                 |
 | uptime            | os.uptime()            | Number uptime()                               |
 
