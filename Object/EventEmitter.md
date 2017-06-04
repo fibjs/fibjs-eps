@@ -39,7 +39,7 @@ const myEmitter = new MyEmitter();
 | off                 |                                          | Object off(ev, func)              |
 | off                 |                                          | Object off(ev)                    |
 | off                 |                                          | Object off(map={})                |
-| listenerCount       | listenerCount(emitter, eventName)        |                                   |
+| listenerCount       | listenerCount(eventName)                 |                                   |
 
 |     property       |      Node.js v7     | fibjs |
 |--------------------|---------------------|-------|
