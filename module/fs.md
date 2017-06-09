@@ -6,14 +6,14 @@ module
 
 | API | Node.js v7 |fibjs |
 |-----|-------|--------|
-| access            |	access(path[, mode], callback)              |                                        |
-| accessSync        |	accessSync(path[, mode])                    |                                        | 
-| appendFile        |	appendFile(file, data[, options], callback) |                                        | 
-| appendFileSync    |	appendFileSync(file, data[, options])       |                                        | 
+| access | access(path[, mode], callback) | access(path[, mode], callback)  |
+| accessSync | accessSync(path[, mode])   | accessSync(path[, mode]) | 
+| appendFile |	appendFile(file, data[, options], callback) | appendFile(String fname, Buffer data)| 
+| appendFileSync    |	appendFileSync(file, data[, options])       |appendFileSync(String fname, Buffer data)| 
 | chmod             | chmod(path, mode, callback)                 | chmod (path, mode) async               |
 | chmodSync         | chmodSync(path, mode)|chmodSync (path, mode)|                                        |
-| chown             |	chown(path, uid, gid, callback)             |                                        |
-| chownSync         |	chownSync(path, uid, gid)                   |                                        |
+| chown             |	chown(path, uid, gid, callback)             |chown(String path, Integer uid, Integer gid)|
+| chownSync         |	chownSync(path, uid, gid)                   |chownSync(String path, Integer uid, Integer gid)|
 | close             |	close(fd, callback)                         |                                        |
 | closeSync         |	closeSync(fd)                               |                                        |
 | createReadStream  |	createReadStream(path[, options])           |                                        |
@@ -35,14 +35,14 @@ module
 | ftruncateSync     |	ftruncateSync(fd, len)                      |                                        |
 | futimes           |	futimes(fd, atime, mtime, callback)         |                                        |
 | futimesSync       |	futimesSync(fd, atime, mtime)               |                                        |
-| lchmod            |	lchmod(path, mode, callback)                |                                        |
-| lchmodSync        |	lchmodSync(path, mode)                      |                                        |
-| lchown            |	lchown(path, uid, gid, callback)            |                                        |
-| lchownSync        |	lchownSync(path, uid, gid)                  |                                        |
-| link              |	link(existingPath, newPath, callback)       |                                        |
-| linkSync          |	linkSync(existingPath, newPath)             |                                        |
-| lstat             |	lstat(path, callback)                       |                                        |
-| lstatSync         |	lstatSync(path)                             |                                        |
+| lchmod            |	lchmod(path, mode, callback)                |lchmod(String path, Integer mode)|
+| lchmodSync        |	lchmodSync(path, mode)                      |lchmodSync(String path, Integer mode)|
+| lchown            |	lchown(path, uid, gid, callback)            |lchown(String path, Integer uid, Integer gid)|
+| lchownSync        |	lchownSync(path, uid, gid)                  |lchownSync(String path, Integer uid, Integer gid)|
+| link              |	link(existingPath, newPath, callback)       |link(String oldPath, String newPath)|
+| linkSync          |	linkSync(existingPath, newPath)             |linkSync(String oldPath, String newPath)|
+| lstat             |	lstat(path, callback)                       |Stat lstat(String path)|
+| lstatSync         |	lstatSync(path)                             |Stat lstatSync(String path)|
 | mkdir             | mkdir(path[, mode], callback)               |mkdir (path, mode=0777) async           |
 | mkdirSync         | mkdirSync(path[, mode])                     |mkdirSync (path, mode=0777)             |
 | mkdtemp           |	mkdtemp(prefix[, options], callback)        |                                        |
@@ -57,10 +57,10 @@ module
 | readFile          | readFile(file[, options], callback)         | Buffer readFile (fname) async          |
 | readFileSync      | readFileSync(file[, options])               | Buffer readFileSync (fname)            |
 | readLines         |                                             | Array readLines (fname, maxlines=-1)   |
-| readlink          |	readlink(path[, options], callback)         |                                        |
-| readlinkSync      |	readlinkSync(path[, options])               |                                        |
-| realpath          |	realpath(path[, options], callback)         |                                        |
-| realpathSync      |	realpathSync(path[, options])               |                                        |
+| readlink          |	readlink(path[, options], callback)         |String readlink(String path)|
+| readlinkSync      |	readlinkSync(path[, options])               |String readlinkSync(String path)|
+| realpath          |	realpath(path[, options], callback)         |String realpath(String path)|
+| realpathSync      |	realpathSync(path[, options])               |String realpathSync(String path)|
 | readTextFile      |                                             | String readTextFile (fname) async      |
 | rename            |	rename(oldPath, newPath, callback)          | rename (from, to) async                |
 | renameSync        |	renameSync(oldPath, newPath)                | renameSync (from, to)                  |
@@ -68,10 +68,10 @@ module
 | rmdirSync         |	rmdirSync(path)                             | rmdirSync (path)                       |
 | stat              | stat(path, callback)                        | Stat 	stat (path) async                |
 | statSync          | statSync(path)                              | Stat 	statSync (path)                  |
-| symlink           |	symlink(target, path[, type], callback)     |                                        |
-| symlinkSync       |	symlinkSync(target, path[, type])           |                                        |
-| truncate          |	truncate(path, len, callback)               |                                        |
-| truncateSync      |	truncateSync(path, len)                     |                                        |
+| symlink           |	symlink(target, path[, type], callback)     |symlink(String target, String linkpath)|
+| symlinkSync       |	symlinkSync(target, path[, type])           |symlinkSync(String target, String linkpath)|
+| truncate          |	truncate(path, len, callback)               |truncate(String path, Integer len)|
+| truncateSync      |	truncateSync(path, len)                     |truncateSync(String path, Integer len)|
 | unlink            | unlink(path, callback)                      | unlink (path) async                    |
 | unlinkSync        | unlinkSync(path)                            | unlinkSync (path)                      |
 | unwatchFile       |	unwatchFile(filename[, listener])           |                                        |
@@ -95,12 +95,12 @@ module
 |SEEK_CUR  |            | const SEEK_CUR = 1 |
 |SEEK_END  |            | const SEEK_END = 2 |
 |constants | constants  |                    |
-|F_OK      | F_OK: 0    |                    |
-|R_OK      | R_OK: 4    |                    |
-|W_OK      | W_OK: 2    |                    |
-|X_OK      | X_OK: 1    |                    |
+|F_OK      | F_OK: 0    | F_OK: 0            |
+|R_OK      | R_OK: 4    | R_OK: 4            |
+|W_OK      | W_OK: 2    | W_OK: 2            |
+|X_OK      | X_OK: 1    | X_OK: 1            |
 
-`Node.js fs.constants:`
+`Node.js fs.constants:` (fibjs also implemented these)
  
 - O_RDONLY: 0
 - O_WRONLY: 1
