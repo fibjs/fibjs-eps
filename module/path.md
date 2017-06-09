@@ -10,7 +10,7 @@ module
 | dirname    | path.dirname(path)         | String dirname (String path)                 |
 | extname    | path.extname(path)         | String extname (String path)                 |
 | format     | path.format(pathObject)    |                                              |
-| isAbsolute | path.isAbsolute(path)      |                                              |
+| isAbsolute | path.isAbsolute(path)      | Boolean isAbsolute(String path)              |
 | fullpath   |                            | String fullpath (String path)                |
 | join       | path.join([...paths])      | String join (...)                            |
 | normalize  | path.normalize(path)       | String normalize (String path)               |
@@ -24,5 +24,5 @@ module
 |----------|-----------|-----------|
 |sep       | sep       | sep       |
 |delimiter | delimiter | delimiter |
-|win32     | win32     |           |
-|posix     | posix     |           |
+|win32     | win32     | win32     |
+|posix     | posix     | posix     |

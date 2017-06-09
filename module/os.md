@@ -6,28 +6,24 @@ module
 
 |       API         |       Node.js v7       |                   fibjs                       |
 |-------------------|------------------------|-----------------------------------------------|
-| arch              | os.arch()              |                                               |
-| cpus              | os.cpus()              |                                               |
-| CPUInfo           |                        | Array CPUInfo()                               |
-| CPUs              |                        | Integer CPUs()                                |
-| endianness        | os.endianness()        |                                               |
+| arch              | os.arch()              | String arch()                                 |
+| cpus              | os.cpus()              | Array cpus()                                  |
+| endianness        | os.endianness()        | String endianness()                           |
 | dateAdd           |                        | Date dateAdd(Date d,Integer num,String part)  |
 | freemem           | os.freemem()           | Long freemem()                                |
-| homedir           | os.homedir()           |                                               |
-| hostname          | os.hostname()          |                                               |
+| homedir           | os.homedir()           | String homedir()                              |
+| hostname          | os.hostname()          | String hostname()                             |
 | loadavg           | os.loadavg()           | Array loadavg()                               |
-| networkInterfaces | os.networkInterfaces() |                                               |
+| networkInterfaces | os.networkInterfaces() | Object networkInterfaces()                    |
 | memoryUsage       |                        | Object memoryUsage()                          |
-| networkInfo       |                        | Object networkInfo()                          |
 | openPrinter       |                        | BufferedStream openPrinter(String name) async |
 | platform          | os.platform()          | String platform()                             |
-| release           | os.release()           |                                               |
+| release           | os.release()           | String release()                              |
 | printerInfo       |                        | Array printerInfo()                           |
-| totalmem          |                        | Long totalmem()                               |
 | tmpdir            | os.tmpdir()            | String tmpdir()                               |
-| totalmem          | os.totalmem()          |                                               |
-| type              | os.type()              |                                               |
-| userInfo          | os.userInfo([options]) |                                               |
+| totalmem          | os.totalmem()          | Long totalmem()                               |
+| type              | os.type()              | String type()                                 |
+| userInfo          | os.userInfo([options]) | Object userInfo(Object options = {})          |
 | time              |                        | Date time(String tmString="")                 |
 | uptime            | os.uptime()            | Number uptime()                               |
 
@@ -36,10 +32,6 @@ module
 | property | Node.js v7 |            fibjs            |
 |----------|------------|-----------------------------|
 |Service   |            | Service                     |
-|hostname  |            | readonly String hostname    |
-|type      |            | readonly String type        |
-|version   |            | readonly String version     |
-|arch      |            | readonly String arch        |
 |timezone  |            | readonly Integer timezone   |
 |execPath  |            | readonly String execPath    |
 |EOL       | EOL        | readonly String EOL         |

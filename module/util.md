@@ -56,6 +56,7 @@ module
 |map |   |Array map(Value list, Function iterator, Value context=undefined)|
 |reduce |   |Value reduce(Value list, Function iterator, Value memo, Value context=undefined)|
 |buildInfo |   |Object buildInfo()|
+| sync            |                                         | sync(func)                     |
 
 ## property
 
