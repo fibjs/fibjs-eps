@@ -22,15 +22,17 @@ const myEmitter = new MyEmitter();
 | addListener         | addListener(eventName, listener)         | Object addListener(ev, func)      |
 | addListener         |                                          | Object addListener(map={})        |
 | emit                | emit(eventName[, ...args])               | Boolean emit(ev,...)              |
-| eventNames          | eventNames()                             |                                   |
+| eventNames          | eventNames()                             | Array eventNames()                |
 | getMaxListeners     | getMaxListeners()                        |                                   |
 | listeners           | listeners(eventName)                     | Array listeners(ev)               |
 | on                  | on(eventName, listener)                  | Object on( ev, func)              |
 | on                  |                                          | Object on(map={})                 |
 | once                | once(eventName, listener)                | Object once(ev, func)             |
 | once                |                                          | Object once(Object map)           |
-| prependListener     | prependListener(eventName, listener)     |                                   |
-| prependOnceListener | prependOnceListener(eventName, listener) |                                   |
+| prependListener     | prependListener(eventName, listener)     | Object prependListener(ev, func)  |
+| prependListener     |                                          | Object prependListener(map = {})  |
+| prependOnceListener | prependOnceListener(eventName, listener) | Object prependOnceListener(ev, func) |
+| prependOnceListener |                                          | Object prependOnceListener(map = {}) |
 | removeAllListeners  | removeAllListeners([eventName])          | Object removeAllListeners(evs=[]) |
 | removeListener      | removeListener(eventName, listener)      | Object removeListener(ev, func)   |
 | removeListener      |                                          | Object removeListener(ev)         |
@@ -39,7 +41,7 @@ const myEmitter = new MyEmitter();
 | off                 |                                          | Object off(ev, func)              |
 | off                 |                                          | Object off(ev)                    |
 | off                 |                                          | Object off(map={})                |
-| listenerCount       | listenerCount(eventName)                 |                                   |
+| listenerCount       | listenerCount(eventName)                 | Integer listenerCount(String ev)  |
 
 |     property       |      Node.js v7     | fibjs |
 |--------------------|---------------------|-------|
