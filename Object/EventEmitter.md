@@ -43,6 +43,8 @@ const myEmitter = new MyEmitter();
 | off                 |                                          | Object off(map={})                |
 | listenerCount       | listenerCount(eventName)                 | Integer listenerCount(String ev)  |
 
+### static
+
 |     property       |      Node.js v7     | fibjs |
 |--------------------|---------------------|-------|
 |defaultMaxListeners | defaultMaxListeners |       |
