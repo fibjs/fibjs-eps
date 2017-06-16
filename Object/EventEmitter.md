@@ -23,7 +23,7 @@ const myEmitter = new MyEmitter();
 | addListener         |                                          | Object addListener(map={})        |
 | emit                | emit(eventName[, ...args])               | Boolean emit(ev,...)              |
 | eventNames          | eventNames()                             | Array eventNames()                |
-| getMaxListeners     | getMaxListeners()                        |                                   |
+| getMaxListeners     | getMaxListeners()                        | Integer getMaxListeners()         |
 | listeners           | listeners(eventName)                     | Array listeners(ev)               |
 | on                  | on(eventName, listener)                  | Object on( ev, func)              |
 | on                  |                                          | Object on(map={})                 |
@@ -45,13 +45,13 @@ const myEmitter = new MyEmitter();
 
 ### static
 
-|     property       |      Node.js v7     | fibjs |
-|--------------------|---------------------|-------|
-|defaultMaxListeners | defaultMaxListeners |       |
+|     property       |      Node.js v7     |          fibjs      |
+|--------------------|---------------------|---------------------|
+|defaultMaxListeners | defaultMaxListeners | defaultMaxListeners |
 
 ### Event
 
-|       Event   |   Node.js v7   | fibjs |
-|---------------|----------------|-------|
-|newListener    | newListener    |       |
-|removeListener | removeListener |       |
+|       Event   |   Node.js v7   |      fibjs     |
+|---------------|----------------|----------------|
+|newListener    | newListener    | newListener    |
+|removeListener | removeListener | removeListener |
