@@ -30,10 +30,3 @@ myConsole.log('hello world');
 |timeEnd | timeEnd(label)||
 |trace | trace([message][, ...args])||
 |warn | warn([data][, ...args])||
-
-### Event
-
-|       Event   |   Node.js v7   | fibjs |
-|---------------|----------------|-------|
-|newListener    | newListener    |       |
-|removeListener | removeListener |       |
