@@ -12,8 +12,8 @@ module
 | GC              |                                         | GC()                           |
 | repl            |                                         | repl(cmds=[])                  |
 | repl            |                                         | repl(Stream out, cmds=[])      |
-| require         | require()                               | Value require(id)              |
-| require.resolve | require.resolve()                       |                                |
+| require         | require()                               | Value require(id, base)        |
+| require.resolve | require.resolve()                       | require.resovle(id, base)       |
 | run             |                                         | run(fname, argv=[])            |
 | setImmediate    | setImmediate(callback[, ...args])       | setImmediate(callback)         |
 | setInterval     | setInterval(callback, delay[, ...args]) | setInterval(callback, timeout) |
