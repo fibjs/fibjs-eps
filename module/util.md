@@ -27,10 +27,10 @@ module
 |isNullOrUndefined |isNullOrUndefined(object)|isNullOrUndefined(Value v)|
 |isNumber |isNumber(object)|isNumber(Value v)|
 |isObject |isObject(object)|isObject(Value v)|
-|isPrimitive |isPrimitive(object)||
+|isPrimitive |isPrimitive(object)|Boolean isPrimitive(Value v)|
 |isRegExp |isRegExp(object)|isRegExp(Value v)|
 |isString |isString(object)|isString(Value v)|
-|isSymbol |isSymbol(object)||
+|isSymbol |isSymbol(object)|Boolean isSymbol(Value v)|
 |isUndefined |isUndefined(object)|isUndefined(Value v)|
 |log |log(string)||
 |print |print([...strings])||
