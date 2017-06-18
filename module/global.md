@@ -32,4 +32,3 @@ module
 |process    | process    | process                    |
 |console    | console    | console                    |
 |Int64      |            | Int64                      |
-|argv       |            | readonly Array 	argv      |
