@@ -19,7 +19,7 @@ module
 | createReadStream  |	createReadStream(path[, options])           |                                        |
 | createWriteStream |	createWriteStream(path[, options])          |                                        |
 | copy              |	                                            | copy (from, to) async                  |
-| exists            |                                             | Boolean exists (path) async            |
+| exists            | exists(path, callback)                      | Boolean exists (path) async            |
 | existsSync        | existsSync(path)                            | Boolean existsSync (path)              |
 | fchmod            |	fchmod(fd, mode, callback)                  |                                        |
 | fchmodSync        |	fchmodSync(fd, mode)                        |                                        |
