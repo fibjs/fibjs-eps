@@ -14,8 +14,8 @@ module
 | chmodSync         | chmodSync(path, mode)|chmodSync (path, mode)|                                        |
 | chown             |	chown(path, uid, gid, callback)             |chown(String path, Integer uid, Integer gid)|
 | chownSync         |	chownSync(path, uid, gid)                   |chownSync(String path, Integer uid, Integer gid)|
-| close             |	close(fd, callback)                         |                                        |
-| closeSync         |	closeSync(fd)                               |                                        |
+| close             |	close(fd, callback)                         | close(Integer fd) async                |
+| closeSync         |	closeSync(fd)                               | closeSync(Integer fd)                  |
 | createReadStream  |	createReadStream(path[, options])           |                                        |
 | createWriteStream |	createWriteStream(path[, options])          |                                        |
 | copy              |	                                            | copy (from, to) async                  |
@@ -47,8 +47,9 @@ module
 | mkdirSync         | mkdirSync(path[, mode])                     |mkdirSync (path, mode=0777)             |
 | mkdtemp           |	mkdtemp(prefix[, options], callback)        |                                        |
 | mkdtempSync       |	mkdtempSync(prefix[, options])              |                                        |
-| open              | open(path, flags[, mode], callback)         |open (fname, flags="r") async           |
-| openSync          | openSync(path, flags[, mode])               |openSync (fname, flags="r")             |
+| open              | open(path, flags[, mode], callback)         |Integer open(String fname, String flags = "r", Integer mode = 0666)|
+| openSync          | openSync(path, flags[, mode])               |Integer openSync(String fname, String flags = "r", Integer mode = 0666)|
+| openFile          |                                             | SeekableStream openFile(String fname, String flags = "r") async |
 | openTextStream    |                                             | openTextStream (fname, flags="r") async|
 | read              |	read(fd, buffer, offset, length, position, callback)  |                              | 
 | readSync          |	readSync(fd, buffer, offset, length, position) |                                     | 
