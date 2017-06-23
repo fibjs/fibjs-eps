@@ -47,7 +47,7 @@ module
 | mkdirSync         | mkdirSync(path[, mode])                     |mkdirSync (path, mode=0777)             |
 | mkdtemp           |	mkdtemp(prefix[, options], callback)        |                                        |
 | mkdtempSync       |	mkdtempSync(prefix[, options])              |                                        |
-| open              | open(path, flags[, mode], callback)         |Integer open(String fname, String flags = "r", Integer mode = 0666)|
+| open              | open(path, flags[, mode], callback)         |Integer open(String fname, String flags = "r", Integer mode = 0666) async|
 | openSync          | openSync(path, flags[, mode])               |Integer openSync(String fname, String flags = "r", Integer mode = 0666)|
 | openFile          |                                             | SeekableStream openFile(String fname, String flags = "r") async |
 | openTextStream    |                                             | openTextStream (fname, flags="r") async|
