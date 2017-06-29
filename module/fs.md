@@ -51,8 +51,8 @@ module
 | openSync          | openSync(path, flags[, mode])               |Integer openSync(String fname, String flags = "r", Integer mode = 0666)|
 | openFile          |                                             | SeekableStream openFile(String fname, String flags = "r") async |
 | openTextStream    |                                             | openTextStream (fname, flags="r") async|
-| read              |	read(fd, buffer, offset, length, position, callback)  |                              | 
-| readSync          |	readSync(fd, buffer, offset, length, position) |                                     | 
+| read              |	read(fd, buffer, offset, length, position, callback)  | Integer read(Integer fd, Buffer buffer, Integer offset = 0, Integer length = 0, Integer position = -1) async | 
+| readSync          |	readSync(fd, buffer, offset, length, position) | Integer readSync(Integer fd, Buffer buffer, Integer offset = 0, Integer length = 0, Integer position = -1) | 
 | readdir           | readdir(path[, options], callback)          | List readdir (path) async              | 
 | readdirSync       | readdirSync(path[, options])                | List readdirSync (path)                |
 | readFile          | readFile(file[, options], callback)         | Buffer readFile (fname) async          |
