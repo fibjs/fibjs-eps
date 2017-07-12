@@ -18,7 +18,7 @@ module
 | getgid      | getgid()                             |                                             |
 | getgroups   | getgroups()                          |                                             |
 | getuid      | getuid()                             |                                             |
-| hrtime      | hrtime([time])                       |                                             |
+| hrtime      | hrtime([time])                       | Array hrtime(Array diff = [])               |
 | initgroups  | initgroups(user, extra_group)        |                                             |
 | kill        | kill(pid[, signal])                  |                                             |
 | memoryUsage | memoryUsage()                        | Object memoryUsage()                        |
