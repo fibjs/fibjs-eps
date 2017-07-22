@@ -21,16 +21,16 @@ module
 | copy              |	                                            | copy (from, to) async                  |
 | exists            | exists(path, callback)                      | Boolean exists (path) async            |
 | existsSync        | existsSync(path)                            | Boolean existsSync (path)              |
-| fchmod            |	fchmod(fd, mode, callback)                  |                                        |
-| fchmodSync        |	fchmodSync(fd, mode)                        |                                        |
-| fchown            |	fchown(fd, uid, gid, callback)              |                                        |
-| fchownSync        |	fchownSync(fd, uid, gid)                    |                                        |
-| fdatasync         |	fdatasync(fd, callback)                     |                                        |
-| fdatasyncSync     |	fdatasyncSync(fd)                           |                                        |
+| fchmod            |	fchmod(fd, mode, callback)                  | fchmod(Integer fd, Integer mode) async posix|
+| fchmodSync        |	fchmodSync(fd, mode)                        | fchmodSync(Integer fd, Integer mode) async posix|
+| fchown            |	fchown(fd, uid, gid, callback)              | fchown(Integer fd, Integer uid, Integer gid) async posix|
+| fchownSync        |	fchownSync(fd, uid, gid)                    | fchownSync(Integer fd, Integer uid, Integer gid) async posix|
+| fdatasync         |	fdatasync(fd, callback)                     | fdatasync(Integer fd) async            |
+| fdatasyncSync     |	fdatasyncSync(fd)                           | fdatasyncSync(Integer fd) async        |
 | fstat             |	fstat(fd, callback)                         |                                        |
 | fstatSync         |	fstatSync(fd)                               |                                        |
-| fsync             |	fsync(fd, callback)                         |                                        |
-| fsyncSync         |	fsyncSync(fd)                               |                                        |
+| fsync             |	fsync(fd, callback)                         | fsync(Integer fd) async                |
+| fsyncSync         |	fsyncSync(fd)                               | fsyncSync(Integer fd) async            |
 | ftruncate         |	ftruncate(fd, len, callback)                |                                        |
 | ftruncateSync     |	ftruncateSync(fd, len)                      |                                        |
 | futimes           |	futimes(fd, atime, mtime, callback)         |                                        |
