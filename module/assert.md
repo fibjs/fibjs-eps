@@ -12,7 +12,7 @@ module
 |doesNotThrow       | doesNotThrow(block[, error][, message])        | doesNotThrow (Function block, String msg="")|
 |equal              | equal(actual, expected[, message])             |equal (Value actual, Value expected, String msg="") |
 |fail               | fail(actual, expected, message, operator)      | |
-|ifError            | ifError(value)                                 | |
+|ifError            | ifError(value)                                 |ifError(Value object = undefined) |
 |notDeepEqual       | notDeepEqual(actual, expected[, message])      | notDeepEqual (Value actual, Value expected, String msg="")|
 |notDeepStrictEqual | notDeepStrictEqual(actual, expected[, message])| |
 |notEqual           | notEqual(actual, expected[, message])          |notEqual (Value actual, Value expected, String msg="") |
