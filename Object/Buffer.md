@@ -45,9 +45,9 @@ const buf6 = Buffer.from('tést', 'latin-1');
 | alloc           | alloc(size[, fill[, encoding]]) | Buffer alloc(Integer size, Integer fill = 0, String codec = "utf8") |
 | alloc           |                                 | Buffer alloc(Integer size, String fill = "", String codec = "utf8") |
 | alloc           |                                 | Buffer alloc(Integer size, Buffer fill, String codec = "utf8") |
-| allocUnsafe     | allocUnsafe(size)               |                                |
-| allocUnsafeSlow | allocUnsafeSlow(size)           |                                |
-| byteLength      | byteLength(string[, encoding])  |                                |
+| allocUnsafe     | allocUnsafe(size)               | Buffer allocUnsafe(Integer size)|
+| allocUnsafeSlow | allocUnsafeSlow(size)           | Buffer allocUnsafeSlow(Integer size)|
+| byteLength      | byteLength(string[, encoding])  | Integer byteLength([String/ArrayBuffer/ArrayBufferView/Buffer] str, String codec = "utf8")|
 | compare         | compare(buf1, buf2)             |                                |
 | concat          | concat(list[, totalLength])     | concat (buflist, cutLength=-1) |
 | from            | from(array)                     |                                |
