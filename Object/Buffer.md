@@ -86,7 +86,7 @@ const buf6 = Buffer.from('tést', 'latin-1');
 |indexOf       |                                              | indexOf(Integer v, offset=0)     |
 |indexOf       |                                              | indexOf(Buffer v, offset=0)      |
 |indexOf       |                                              | indexOf(String v, offset=0)      |
-|keys          | keys()                                       |   |
+|keys          | keys()                                       | Object keys();                   |
 |lastIndexOf   | lastIndexOf(value[, byteOffset][, encoding]) |   |
 |readDoubleBE  | readDoubleBE(offset[, noAssert])             | readDoubleBE(offset=0, noAssert=false)  |
 |readDoubleLE  | readDoubleLE(offset[, noAssert])             | readDoubleLE(offset=0, noAssert=false)  |
@@ -117,7 +117,7 @@ const buf6 = Buffer.from('tést', 'latin-1');
 |toArray       |                                              | toArray()                     |
 |toJSON        | toJSON()                                     | toJSON (String key="")  |
 |toString      | toString([encoding[, start[, end]]])         |toString (codec, offset=0, end=-1) |
-|values        | values()                                     |   |
+|values        | values()                                     | Object values()        |
 |write         | write(string[, offset[, length]][, encoding])|write(str, offset=0, length=-1, codec="utf8")|
 |write||write(str, offset=0, codec="utf8")|
 |write||write(str, codec="utf8")|
