@@ -50,6 +50,7 @@ const buf6 = Buffer.from('tést', 'latin-1');
 | byteLength      | byteLength(string[, encoding])  | Integer byteLength([String/ArrayBuffer/ArrayBufferView/Buffer] str, String codec = "utf8")|
 | compare         | compare(buf1, buf2)             |                                |
 | concat          | concat(list[, totalLength])     | concat (buflist, cutLength=-1) |
+| from            | from(object[, offsetOrEncoding[, length]])          |                                |
 | from            | from(array)                     |                                |
 | from            | from(arrayBuffer[, byteOffset[, length]]) ||
 | from            | from(buffer)                    |Buffer from(Buffer buffer, Integer byteOffset = 0, Integer length = -1)|
