@@ -51,9 +51,9 @@ const buf6 = Buffer.from('tést', 'latin-1');
 | compare         | compare(buf1, buf2)             |                                |
 | concat          | concat(list[, totalLength])     | concat (buflist, cutLength=-1) |
 | from            | from(array)                     |                                |
-| from            | from(arrayBuffer[, byteOffset[, length]]) |                      |
-| from            | from(buffer)                    |                                |
-| from            | from(string[, encoding])        |                                |
+| from            | from(arrayBuffer[, byteOffset[, length]]) ||
+| from            | from(buffer)                    |Buffer from(Buffer buffer, Integer byteOffset = 0, Integer length = -1)|
+| from            | from(string[, encoding])        |Buffer from(String str, String codec = "utf8")|
 | isBuffer        | isBuffer(obj)                   | isBuffer (Value v)             |
 | isEncoding      | isEncoding(encoding)            | Boolean isEncoding(String codec)|
 
