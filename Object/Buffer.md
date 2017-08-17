@@ -42,7 +42,9 @@ const buf6 = Buffer.from('tést', 'latin-1');
 
 |       method    |            Node.js v7           |               fibjs            |
 |-----------------|---------------------------------|--------------------------------|
-| alloc           | alloc(size[, fill[, encoding]]) |                                |
+| alloc           | alloc(size[, fill[, encoding]]) | Buffer alloc(Integer size, Integer fill = 0, String codec = "utf8") |
+| alloc           |                                 | Buffer alloc(Integer size, String fill = "", String codec = "utf8") |
+| alloc           |                                 | Buffer alloc(Integer size, Buffer fill, String codec = "utf8") |
 | allocUnsafe     | allocUnsafe(size)               |                                |
 | allocUnsafeSlow | allocUnsafeSlow(size)           |                                |
 | byteLength      | byteLength(string[, encoding])  |                                |
