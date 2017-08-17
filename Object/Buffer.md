@@ -55,7 +55,7 @@ const buf6 = Buffer.from('tést', 'latin-1');
 | from            | from(buffer)                    |                                |
 | from            | from(string[, encoding])        |                                |
 | isBuffer        | isBuffer(obj)                   | isBuffer (Value v)             |
-| isEncoding      | isEncoding(encoding)            |                                |
+| isEncoding      | isEncoding(encoding)            | Boolean isEncoding(String codec)|
 
 |   property  |  Node.js v7  | fibjs |
 |-------------|----------------|-------|
