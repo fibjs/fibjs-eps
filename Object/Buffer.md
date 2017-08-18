@@ -76,7 +76,7 @@ const buf6 = Buffer.from('tést', 'latin-1');
 |compare       | compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])|   |
 |compare       |                                              | compare(Buffer buf)              |
 |copy          | copy(target[, targetStart[, sourceStart[, sourceEnd]]])|copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=-1)|
-|entries       | entries()                                    |   |
+|entries       | entries()                                    | Iterator entries() |
 |equals        | equals(otherBuffer)                          | equals (object expected)         |
 |fill          | fill(value[, offset[, end]][, encoding])     |                                  |
 |fill          |                                              | fill(v=0, offset=0, end=-1)      |
