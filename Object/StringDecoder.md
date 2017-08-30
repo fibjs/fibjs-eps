@@ -19,11 +19,11 @@ console.log(decoder.write(euro));
 
 |           Node.js v7          |      fibjs      |
 |-------------------------------|-----------------|
-| new StringDecoder([encoding]) |                 |
+| new StringDecoder([encoding]) | StringDecoder(String encoding = "utf8") |
 
 ### member
 
 | method |   Node.js v7  |   fibjs   |
 |--------|---------------|-----------|
-|end     | end([buffer]) |           |
-|write   | write(buffer) |           |
+|end     | end([buffer]) | String end([Buffer buf]) |
+|write   | write(buffer) | String write(Buffer buf) |
