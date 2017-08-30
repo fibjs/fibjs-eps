@@ -19,4 +19,4 @@ console.log(decoder.write(euro));
 
 |   property    | Node.js v7      | fibjs |
 |---------------|-----------------|-------|
-| StringDecoder | StringDecoder   |       |
+| StringDecoder | StringDecoder   | StringDecoder |
